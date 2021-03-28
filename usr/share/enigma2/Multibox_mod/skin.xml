@@ -6504,16 +6504,16 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
  <!-- NumberZapExt -->
  <screen backgroundColor="black" name="NumberZapExt" position="410,375" size="1100,330" title="Channel" transparent="0" zPosition="-1" flags="wfBorder">
   <eLabel backgroundColor="black" font="NotoSans-Bold; 60" halign="left" position="55,35" size="618,73" text="Schalte um nach..." transparent="0" zPosition="3" borderWidth="0" borderColor="black" foregroundColor="red" />
-  <widget alphatest="blend" backgroundColor="black" name="chPicon" position="698,61" size="356,220" transparent="1" zPosition="3" />
-  <widget backgroundColor="black" font="NotoSans-Bold;90" halign="center" name="chNum" position="20,115" size="222,135" transparent="0" zPosition="3" />
+  <widget backgroundColor="black" font="NotoSans-Bold;90" halign="center" name="chNum" position="19,115" size="222,135" transparent="0" zPosition="3" />
   <widget backgroundColor="black" font="NotoSans-Bold; 50" halign="left" valign="center" name="chName" noWrap="1" position="250,180" size="440,70" transparent="0" foregroundColor="red" zPosition="3" />
   <widget font="NotoSans-Bold; 45" halign="left" backgroundColor="black" name="chBouq" noWrap="1" position="250,113" size="440,54" transparent="0" foregroundColor="green" zPosition="3" />
   <ePixmap position="0,15" size="1100,310" pixmap="Multibox_mod/menu/numberzap.png" zPosition="1" transparent="0" alphatest="blend" />
-  <ePixmap pixmap="Multibox_mod/menu/numberzap2.png" position="693,54" size="363,233" zPosition="2" alphatest="blend" />
   <widget source="session.Event_Now" render="Label" position="38,257" size="650,45" font="NotoSans-Bold; 40" halign="left" backgroundColor="black" transparent="0" zPosition="3" valign="top" foregroundColor="darkgrey">
     <convert type="EventName">Name</convert>
   </widget>
   <eLabel name="" position="0,0" size="1100,330" foregroundColor="black" backgroundColor="black" />
+<ePixmap pixmap="menu/numberzap3.png" position="693,54" size="363,233" zPosition="2" alphatest="blend" />
+<widget alphatest="blend" backgroundColor="black" name="chPicon" position="698,61" size="356,220" transparent="1" zPosition="3" />
 </screen>
 <!-- NumberZapExt -->
 <!-- menu_informarionen -->
@@ -6889,23 +6889,21 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 </screen>
 <screen name="EventViewContextMenu" position="0,0" size="1920,1080" title="Eventview Menu" flags="wfNoBorder" backgroundColor="transparent">
   <widget name="menu" position="27,126" size="1160,800" itemHeight="60" font="NotoSans-Bold;40" scrollbarMode="showAlways" backgroundColor="black" foregroundColor="white" foregroundColorSelected="red" foregroundColorMarkedSelected="red" selectionPixmap="Multibox_mod/menu/selected_60.png" transparent="1" zPosition="2" />
-  <widget source="Title" render="Label" position="15,6" size="1000,70" font="NotoSans-Bold; 40" halign="left" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" zPosition="1" borderWidth="3" borderColor="white" />
-  <ePixmap pixmap="Multibox_mod/buttons/icons/key_exit.png" position="1796,1012" size="103,35" zPosition="10" transparent="1" alphatest="blend" />
-<ePixmap pixmap="Multibox_mod/menu/BG_default.png" position="-2,0" zPosition="-20" size="1920,1080" />
-  <widget source="global.CurrentTime" render="Label" position="1031,11" size="750,70" font="NotoSans-Bold; 40" halign="right" backgroundColor="black" transparent="1" borderWidth="3" borderColor="red">
-    <convert type="ClockToText">Format:%A,%d.%m.%Y  %H:%M:%S</convert>
-  </widget>
-  <ePixmap position="1458,832" size="200,200" pixmap="Multibox_mod/icons/service_info.png" />
+  <ePixmap pixmap="Multibox_mod/buttons/icons/key_exit.png" position="1796,1026" size="103,35" zPosition="10" transparent="1" alphatest="blend" />
+  <ePixmap pixmap="Multibox_mod/menu/BG_default.png" position="-2,0" zPosition="-20" size="1920,1080" />
+  <ePixmap position="1459,788" size="200,200" pixmap="Multibox_mod/icons/service_info.png" />
   <widget position="1225,1145" size="671,377" source="session.VideoPicture" render="Pig" zPosition="3" backgroundColor="background-pig" />
   <eLabel name="vertikalline" position="1223,530" size="674,2" backgroundColor="red" foregroundColor="red" />
   <ePixmap pixmap="Multibox_mod/menu/line648.png" position="1219,761" size="674,4" alphatest="blend" zPosition="6" />
   <ePixmap pixmap="Multibox_mod/menu/line648.png" position="1219,543" size="674,4" alphatest="blend" zPosition="6" />
-<widget source="session.Event_Now" render="AMB_RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=2500,wrap=1,always=1,repeat=5,oneshot=1" position="1221,555" size="674,195" font="NotoSans-Bold;34" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="2">
+  <widget source="session.Event_Now" render="AMB_RunningText" options="movetype=running,direction=top,startpoint=0,startdelay=2500,wrap=1,always=1,repeat=5,oneshot=1" position="1221,555" size="674,195" font="NotoSans-Bold;34" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="2">
     <convert type="EventName">FullDescription</convert>
   </widget>
-<panel name="template_pig_setup" />
+  <panel name="template_pig_setup" />
   <ePixmap pixmap="Multibox_mod/menu/runningtext_bg.png" position="1219,554" size="676,200" alphatest="blend" zPosition="1" />
   <ePixmap position="1180,130" zPosition="4" size="10,820" pixmap="Multibox_mod/menu/scrollbarbackground.png" alphatest="blend" transparent="1" />
+<panel name="template_fullscreen_title" />
+<panel name="template_source_red_o_blue" />
 </screen>
 <screen name="Hmenu_center" flags="wfNoBorder" position="0,0" backgroundColor="transparent">
   <ePixmap alphatest="blend" pixmap="Multibox_mod/menu/menue_vertical_unten.png" position="0,315" size="1920,325" zPosition="-1" />
@@ -7047,6 +7045,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <widget name="data" position="30,560" size="1250,420" font="Regular;32" transparent="1" foregroundColor="foreground" backgroundColor="background" scrollbarSliderBorderWidth="1" scrollbarWidth="12" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="Line" />
   <eLabel text="CH +/-" position="1136,1005" size="250,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="background" transparent="1" />
 </screen>
+<!-- NetSpeedTestScreen -->
 <screen name="NetSpeedTestScreen" position="0,0" size="1920,1080" title="Net Speed Test" flags="wfNoBorder" backgroundColor="transparent">
  <widget source="Title" render="Label" position="173,12" size="1000,70" font="NotoSans-Bold; 40" halign="left" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" zPosition="1" borderWidth="3" borderColor="white" />
   <ePixmap position="20,170" size="380,85" pixmap="Multibox_mod/icons/ping.png" zPosition="1" transparent="1" alphatest="blend" />
@@ -7073,6 +7072,8 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 <ePixmap pixmap="Skinparts/ATV_Logo.png" position="11,20" size="150,48" zPosition="1" alphatest="blend" />
 <ePixmap pixmap="icons/netspeed_1.png" position="1484,700" size="200,200" zPosition="1" alphatest="blend" />
 </screen>
+<!-- NetSpeedTestScreen -->
+<!-- xtra_plugin -->
 <screen name="xtra" position="0,0" size="1920,1080" title="xtraEvent..." flags="wfNoBorder" backgroundColor="transparent">
 <panel name="template_fullscreen" />
  <panel name="template_pixmap_BG" />
@@ -7158,4 +7159,32 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 <panel name="template_pig_setup" />
 <ePixmap pixmap="buttons/icons/key_exit.png" position="1804,1022" size="103,35" zPosition="10" transparent="1" />
 </screen>
+<screen name="satellitesConfigScreen" position="center,center" size="450,900" title="Satellite positions" flags="wfBorder" backgroundColor="black">
+<widget name="txt_title" position="0,0" size="450,080" font="NotoSans-Bold; 42" foregroundColor="yellow" transparent="1" halign="center" valign="center" />
+<widget name="txt_counter" position="180,80" size="90,30" font="Regular;30" foregroundColor="white" transparent="1" halign="center" valign="center" />
+<eLabel name="frame_counter" position="180,80" size="90,30" zPosition="-1" backgroundColor="#114C0000" />
+<widget name="config" position="50,120" size="350,690" font="NotoSans-Bold; 30" itemHeight="35" scrollbarMode="showOnDemand" backgroundColor="black" foregroundColor="white" foregroundColorSelected="red" foregroundColorMarkedSelected="red" selectionPixmap="Multibox_mod/menu/selected_35.png" enableWrapAround="1" />
+<ePixmap pixmap="skin_default/buttons/red.png" position="25,854" size="30,46" transparent="1" alphatest="on" zPosition="1" />
+<ePixmap pixmap="skin_default/buttons/green.png" position="230,854" size="30,46" transparent="1" alphatest="on" zPosition="1" />
+<widget render="Label" source="txt_red" position="65,854" size="250,46" halign="left" valign="center" font="Regular;30" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+<widget render="Label" source="txt_green" position="270,854" size="250,46" halign="left" valign="center" font="Regular;30" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+</screen>
+<screen name="directoryBrowserScreen" position="460,90" size="1000,900" title="Directory browser" flags="wfBorder" backgroundColor="black">
+<widget name="txt_title" position="0,-3" size="1000,90" font="NotoSans-Bold; 42" foregroundColor="yellow" transparent="1" halign="center" valign="center" />
+<widget name="txt_dir" position="50,90" size="900,50" font="Regular;30" foregroundColor="white" transparent="1" halign="left" valign="center" />
+<eLabel name="frame_dir" position="50,90" size="900,50" zPosition="-1" backgroundColor="#114C0000" />
+<widget name="config" position="50,155" size="900,660" font="NotoSans-Bold; 30" itemHeight="35" scrollbarMode="showOnDemand" backgroundColor="black" foregroundColor="white" foregroundColorSelected="red" foregroundColorMarkedSelected="red" selectionPixmap="Multibox_mod/menu/selected_35.png" enableWrapAround="1" />
+<ePixmap pixmap="skin_default/buttons/red.png" position="25,854" size="30,46" transparent="1" alphatest="on" zPosition="1" />
+<ePixmap pixmap="skin_default/buttons/green.png" position="190,854" size="30,46" transparent="1" alphatest="on" zPosition="1" />
+<ePixmap pixmap="skin_default/buttons/yellow.png" position="390,854" size="30,46" transparent="1" alphatest="on" zPosition="1" />
+<ePixmap pixmap="skin_default/buttons/blue.png" position="680,854" size="30,46" transparent="1" alphatest="on" zPosition="1" />
+<widget render="Label" source="txt_red" position="65,854" size="300,46" halign="left" valign="center" font="Regular;30" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+<widget render="Label" source="txt_green" position="230,854" size="300,46" halign="left" valign="center" font="Regular;30" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+<widget render="Label" source="txt_yellow" position="430,854" size="300,46" halign="left" valign="center" font="Regular;30" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+<widget render="Label" source="txt_blue" position="720,854" size="300,46" halign="left" valign="center" font="Regular;30" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+ </screen>
+ <screen name="piconsUpdateJobScreen" position="660,390" size="600,300" title="picons update in progress" flags="wfBorder" backgroundColor="black">
+<widget name="logWindow" position="0,0" size="596,298" font="NotoSans-Bold; 32" transparent="0" foregroundColor="white" backgroundColor="black" zPosition="1" />
+</screen>
+ <!-- xtra_plugin -->
 </skin>
