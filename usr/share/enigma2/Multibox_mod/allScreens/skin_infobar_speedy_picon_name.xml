@@ -313,7 +313,7 @@
     </convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <ePixmap position="15,1002" size="50,32" pixmap="icons/dish7.png" transparent="0" zPosition="1" alphatest="blend" />
+  <ePixmap position="18,996" size="50,49" pixmap="icons/dish_sec_infob2.png" transparent="0" zPosition="1" alphatest="blend" />
   <widget font="LCD; 20" halign="center" position="1556,1112" render="Label" size="356,44" source="session.CurrentService" backgroundColor="black" transparent="1" zPosition="2" foregroundColor="orange" valign="top">
     <convert type="AMB_BoxInfo">Uptime</convert>
   </widget>
@@ -327,7 +327,7 @@
   <convert type="ConditionalShowHide">Blink</convert>
 </widget>
 <ePixmap pixmap="icons/icon_update_off.png" position="1884,986" size="20,20" zPosition="3" alphatest="blend" transparent="1" />-->
-<widget source="session.CurrentService" render="AMB_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=10,repeat=1,startdelay=500,always=0" position="375,1040" size="590,39" font="Regular; 30" foregroundColor="darkred" backgroundColor="black" transparent="1" zPosition="5" text="12519 V 27500 Auto" halign="left">
+<widget source="session.CurrentService" render="AMB_RunningText" options="movetype=running,startpoint=0,direction=left,steptime=10,repeat=1,startdelay=500,always=0" position="375,1042" size="590,39" font="Regular; 30" foregroundColor="darkred" backgroundColor="black" transparent="1" zPosition="5" text="12519 V 27500 Auto" halign="left">
   <convert type="AMB_ServiceName2">%P %S %s %F %p %Y %f %M %b</convert> 
 </widget>
 <widget source="session.CurrentService" position="815,764" size="105,51" render="Pixmap" pixmap="Multibox_mod/icons/test/ico_uhd_on.png" zPosition="5" alphatest="blend" transparent="1">
