@@ -3847,18 +3847,7 @@
     <panel name="template_pixmap_BG" />
     <panel name="template_pig_setup" />
   </screen>
-  <!-- NumberZapExt -->
-<screen name="NumberZapExt" position="685,250" size="550,220" backgroundColor="background" flags="wfNoBorder">
-  <eLabel name="BG" position="319,9" size="222,134" zPosition="-10" backgroundColor="Line" />
-  <eLabel name="BG" position="320,10" size="220,132" zPosition="-5" backgroundColor="black" />
-  <eLabel name="BG" position="0,0" size="550,220" zPosition="-20" backgroundColor="Line" />
-  <eLabel name="BG" position="2,2" size="546,216" zPosition="-15" backgroundColor="black" />
-  <widget name="chPicon" position="320,10" size="220,132" transparent="1" zPosition="1" alphatest="blend" />
-  <widget name="chName" position="5,154" size="540,60" halign="center" valign="center" font="Regular; 48" backgroundColor="black" foregroundColor="mediumblue" noWrap="1" transparent="1" />
-  <widget name="chNum" position="12,31" size="280,100" halign="right" valign="center" font="Regular; 100" foregroundColor="white" backgroundColor="black" transparent="1" />
- </screen>
-  <!-- NumberZapExt -->
-  <!--######################################### -->
+<!--######################################### -->
     <!-- Audio Sync-->
 <screen name="AC3LipSync" position="585,560" size="750,490" backgroundColor="background" flags="wfNoBorder">
   <eLabel text="Audio Sync" position="10,10" size="400,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />

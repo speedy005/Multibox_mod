@@ -2301,22 +2301,22 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
  <screen name="template_VpnIp_SecondInfobar" flags="wfNoBorder">
   <applet type="onLayoutFinish">
   </applet>
-  <eLabel text="Samba:" backgroundColor="black" position="1832,946" size="80,30" font="NotoSans-Bold; 18" halign="left" valign="center" foregroundColor="yellow" transparent="1" zPosition="1" />
-  <eLabel backgroundColor="red" position="1903,951" size="5,20" zPosition="1" />
-  <widget backgroundColor="green" position="1903,951" size="5,20" zPosition="2" render="FixedLabel" source="session.CurrentService">
+  <eLabel text="Samba:" backgroundColor="black" position="1733,940" size="110,40" font="NotoSans-Bold; 22" halign="left" valign="center" foregroundColor="yellow" transparent="1" zPosition="1" />
+  <eLabel backgroundColor="red" position="1828,947" size="7,25" zPosition="1" />
+  <widget backgroundColor="green" position="1828,947" size="7,25" zPosition="2" render="FixedLabel" source="session.CurrentService">
     <convert type="AMB_SambaVpnIp">samba</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <eLabel text="VPN:" backgroundColor="black" position="1728,946" size="80,30" font="NotoSans-Bold; 18" halign="left" valign="center" foregroundColor="red" transparent="1" zPosition="1" />
-  <eLabel backgroundColor="red" position="1782,950" size="5,20" zPosition="1" />
-  <widget backgroundColor="green" position="1782,950" size="5,20" zPosition="2" render="FixedLabel" source="session.CurrentService">
+  <eLabel text="VPN:" backgroundColor="black" position="1733,899" size="110,40" font="NotoSans-Bold; 22" halign="left" valign="center" foregroundColor="red" transparent="1" zPosition="1" />
+  <eLabel backgroundColor="red" position="1827,906" size="7,25" zPosition="1" />
+  <widget backgroundColor="green" position="1827,906" size="7,25" zPosition="2" render="FixedLabel" source="session.CurrentService">
     <convert type="AMB_SambaVpnIp">vpn</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget backgroundColor="black" position="1727,924" size="188,20" font="NotoSans-Bold; 20" noWrap="1" halign="left" valign="center" foregroundColor="mediumblue" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
+  <widget backgroundColor="black" position="1610,868" size="300,29" font="NotoSans-Bold; 25" noWrap="1" halign="left" valign="center" foregroundColor="mediumblue" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
     <convert type="AMB_SambaVpnIp">c+myip</convert>
   </widget>
-  <widget position="1799,863" size="88,53" zPosition="11" render="AMB_SambaVpnIp" source="session.CurrentService" alphatest="blend">
+  <widget position="1612,912" size="88,53" zPosition="11" render="AMB_SambaVpnIp" source="session.CurrentService" alphatest="blend">
     <convert type="AMB_SambaVpnIp">flag</convert>
   </widget>
 </screen>
